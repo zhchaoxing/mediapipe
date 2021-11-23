@@ -117,7 +117,7 @@ class Pose(SolutionBase):
                smooth_landmarks=True,
                enable_segmentation=False,
                smooth_segmentation=True,
-               min_detection_confidence=0.5,
+               min_detection_confidence=0.4, //was 0.5, trying https://github.com/google/mediapipe/issues/2602#issuecomment-936829237
                min_tracking_confidence=0.5):
     """Initializes a MediaPipe Pose object.
 
